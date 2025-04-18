@@ -1,0 +1,835 @@
+@font-face {
+    font-family: 'Roxborough-cf';
+    src: url('fonts/roxborough-cf-regular.ttf') format('truetype');
+    font-family: 'Virtual';
+    src: url('fonts/virtual-regular.ttf') format('truetype');
+
+  }
+  
+  body {
+    font-family: 'Roxborough-cf';
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #7f604e;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar branca com sombra */
+  .navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-brand img {
+    height: 70px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #AC4314 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 15px;
+  }
+  
+  .navbar-nav .dropdown-menu {
+    background-color: #fff;
+    border: none;
+  }
+  
+  .navbar-nav .dropdown-item {
+    color: #7f604e;
+    font-weight: 500;
+  }
+
+  .navbar-nav .dropdown-item:hover{
+    background-color: #AC4314;
+    color: #fff;
+    transition: 0.3s;
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu{
+    display: block;
+  }
+  
+  /* Hero com imagem de fundo e overlay */
+  .hero {
+    background: url('media/Green\ House.jpeg.jpg') center center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+    text-align: left;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero .container {
+    position: absolute;
+    z-index: 2;
+    margin-left: 8rem;
+    top: 29rem;
+  }
+  
+  .hero h1 {
+    font-size: 13rem;
+    font-family: 'Virtual';
+    line-height: 0.6;
+  }
+  
+  .hero p {
+    font-size: 1.8rem;
+    margin-top: 2.3rem;
+  }
+  
+  /* Seção Noivos */
+  #noivos {
+    padding-top: 100px;
+    position: relative;
+  }
+  
+  #noivos img.rounded-circle {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 7px solid #ffffff;
+  }
+
+.noiva{
+    margin-left: -100px;
+  }
+  
+  .folha-esquerda {
+    position: absolute;
+    top: 0;
+    width: 400px;
+    z-index: 1;
+    left: 0;
+  }
+  
+  .folha-direita {
+    position: absolute;
+    right: 0;
+    top: -10;
+    width: 300px;
+    z-index: 1;
+    transform: scaleX(-1);
+    margin-top: 27rem;
+  }
+  
+  .countdown {
+    margin: 2rem 0;
+    color: white;
+    font-size: 1.6rem;
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .countdown_itens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .countdown span {
+    background-color: #AC4314;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 2.3rem;
+    z-index: 1;
+    
+  }
+
+  .texto-noivos{
+    align-items: center;
+  }
+
+  .texto-noivos h1{
+    font-size: 9rem;
+    font-family: "Virtual";
+    color: #AC4314;
+  }
+  
+  .texto-noivos p{
+    color: #7f604e;
+    font-size: 1.5rem;
+  }
+
+  .base-noivos{
+    position: relative;
+    background-color: #d77049;
+    margin: 2rem 0;
+    padding: 70px 59.6rem;
+    top: -10rem;
+    z-index: 0;
+  }
+
+  /* Nossa história */
+
+  .nossa-historia-section {
+    background-color: white;
+    padding-bottom: 11rem;
+    position: relative;
+  }
+  
+  .nossa-historia-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+  
+  .texto-nossa-historia {
+    max-width: 400px;
+    z-index: 1;
+    margin-left: -10rem;
+  }
+  
+  .texto-nossa-historia p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    width: 19rem;
+  }
+  
+  .texto-nossa-historia .versiculo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .botao-historia-wrapper {
+    margin-top: -45rem;
+    margin-left: 12rem;
+  }
+  
+  .botao-historia-wrapper button {
+    background-color: #fff;
+    border: 3px solid #AC4314;
+    width: 20rem;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: 'Roxborough-cf';
+    color: #7f604e;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .botao-historia-wrapper button:hover{
+    background-color: #AC4314;
+    color: #fff;
+    transition: 0.5s;
+  }
+
+  .img-nossa-historia{
+    width: 80rem;
+    margin-top: -10rem;
+    margin-bottom: 30rem;
+    margin-left: 25rem;
+  }
+
+  /* Lista de Presentes */
+
+  .presentes-section {
+    background-color: white;
+    padding: 100px 0;
+    position: relative;
+  }
+  
+  .presentes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-left: 12rem;
+    gap: 4rem;
+  }
+  
+  .texto-presentes {
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .texto-presentes h1 {
+    font-size: 8rem;
+    font-family: 'Virtual';
+    color: #AC4314;
+    margin-bottom: 1rem;
+  }
+  
+  .texto-presentes p {
+    font-size: 2rem;
+    color: #7f604e
+  }
+  
+  .botao-presentes {
+    margin-top: 2rem;
+    position: relative;
+    left: 0;
+    background-color: white;
+    color: #7f604e;
+    border: 3px solid #AC4314;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2;
+    width: 50rem;
+  }
+
+  .botao-presentes:hover{
+    background-color: #AC4314;
+    color: #fff;
+    transition: 0.5s;
+  }
+  
+  .img-presentes {
+    width: 40rem;
+    height: auto;
+    position: relative;
+    z-index: 0;
+    margin-left: 35rem;
+  }
+  
+  
+  /* Save the Date */
+
+  .save-the-date-section {
+    background-color: #AC4314;
+    color: #fff;
+    padding: 100px 0; /* remove margens laterais */
+  }
+  
+  .save-the-date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 4rem; /* mantém um pequeno respiro interno */
+  }
+  
+  .video-save-the-date video {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px #AC4314;
+    margin-left: 20rem;
+  }
+  
+  .texto-save-the-date {
+    text-align: center;
+    padding-right: 20rem;
+  }
+  
+  .texto-save-the-date h1 {
+    font-family: 'Virtual';
+    font-size: 20rem;
+    line-height: 0.7;
+    margin: 0;
+  }
+  
+  .texto-save-the-date h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Cerimônia */
+
+.cerimonia-section {
+  background-color: #7f604e;
+  color: #fff;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.cerimonia-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin-left: 12rem;
+}
+
+.texto-cerimonia {
+  width: 100rem;
+  position: relative;
+  z-index: 1;
+}
+
+.texto-cerimonia h1 {
+  font-size: 8rem;
+  font-family: 'Virtual';
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.texto-cerimonia .texto-principal{
+  width: 50rem;
+  margin-bottom: 5rem;
+}
+
+.texto-cerimonia p {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  width: 50rem;
+}
+
+.img-cerimonia {
+  width: 50rem;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+  
+  /* Formulários e botões */
+  input.form-control,
+  textarea.form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #AC4314;
+    border-color: #AC4314;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #8d3510;
+    border-color: #8d3510;
+  }
+  
+  .btn-success {
+    background-color: #198754;
+    font-weight: bold;
+  }
+  
+  form .btn {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+/* Responsivo atualizado para celulares modernos */
+
+@media (max-width: 768px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero {
+    background-position: center;
+    height: auto;
+    padding: 250px 0 80px 20px;
+    text-align: left;
+  }
+
+  .hero .container {
+    position: relative;
+    top: 0;
+    margin-left: 0;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    line-height: 0.7;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .folha-esquerda,
+  .folha-direita {
+    width: 6rem;
+  }
+
+  .folha-direita{
+    margin-top: 33.5rem;
+  }
+
+  #noivos {
+    padding-top: 50px;
+  }
+
+  #noivos .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #noivos .row > div:first-child {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  #noivos img.rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .noiva {
+    margin-left: -50px;
+    z-index: 1;
+  }
+
+  .texto-noivos {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .texto-noivos h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+
+  .texto-noivos p {
+    font-size: 18px;
+    padding: 0 1rem;
+  }
+
+  .base-noivos {
+    padding: 50px 2rem;
+    margin-bottom: 0;
+  }
+
+  .nossa-historia-container,
+  .presentes-container,
+  .save-the-date-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .nossa-historia-section{
+    padding-bottom: 5rem;
+  }
+
+  .presentes-section{
+    padding: 0;
+  }
+
+  .texto-nossa-historia,
+  .texto-presentes,
+  .texto-save-the-date {
+    margin: 0 auto;
+  }
+
+  .texto-nossa-historia p,
+  .texto-presentes p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .texto-nossa-historia p{
+    font-size: 29px;
+  }
+
+  .texto-presentes p{
+    font-size: 22px;
+  }
+
+  .img-nossa-historia,
+  .img-presentes,
+  .video-save-the-date video {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .botao-historia-wrapper,
+  .botao-presentes {
+    margin: 2rem auto;
+    width: 90%;
+    font-size: 1rem;
+  }
+  .botao-historia-wrapper{
+    align-items: center;
+    margin-left: 2.5rem;
+  }
+
+  .botao-presentes{
+    font-size: 20px;
+  }
+
+  .texto-presentes h1 {
+    font-size: 5rem;
+  }
+
+  .texto-save-the-date h1 {
+    font-size: 10rem;
+    line-height: 0.7;
+  }
+
+  .texto-save-the-date h2 {
+    font-size: 2.2rem;
+  }
+
+  .countdown_itens {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .countdown span {
+    font-size: 2.2rem;
+    align-items: center;
+    min-width: 90px;
+  }
+
+  .presentes-container,
+  .nossa-historia-container {
+    margin-left: 0;
+    gap: 2rem;
+  }
+
+  .texto-nossa-historia {
+    margin-left: 0;
+  }
+
+  .botao-historia-wrapper button {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .img-nossa-historia {
+    margin: 0 auto 2rem;
+    width: 100%;
+  }
+
+  .img-presentes {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .video-save-the-date video {
+    margin: 0 auto;
+  }
+
+  .texto-save-the-date {
+    padding-right: 0;
+  }
+
+  .save-the-date-container {
+    padding: 2rem 1rem;
+  }
+
+  .cerimonia-container{
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1rem;
+    }
+
+  .texto-cerimonia{
+    width: 10rem;
+  }
+
+  .texto-cerimonia h1 {
+    font-size: 8rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-family: 'Virtual';
+    margin-left: 2.5rem;
+  }
+
+  .texto-cerimonia .texto-principal{
+    font-size: 1.6rem;
+    width: 20rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    margin-left: 2.5rem;
+  }
+
+  .texto-cerimonia p {
+    font-size: 1.6rem;
+    width: 20rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+  }
+
+  .img-cerimonia {
+    max-width: 100%;
+    margin-left: 0rem;
+    
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    padding: 0;
+  }
+
+  .hero .container {
+    max-width: 1200px;
+    margin-left: 8rem;
+    bottom: 10%;
+    position: absolute;
+  }
+
+  .hero h1 {
+    font-size: 14rem;
+    margin-top: -20rem;
+    line-height: 2.1;
+  }
+
+  .hero p {
+    font-size: 2.5rem;
+    margin-top: -8rem;
+  }
+
+  .folha-direita{
+    margin-top: 38rem;
+    height: 300px;
+  }
+
+  .texto-noivos h1 {
+    font-size: 8rem;
+  }
+
+  .texto-noivos p {
+    font-size: 1.8rem;
+  }
+
+  .base-noivos {
+    height: 200px;
+    padding: 0;
+  }
+
+  .nossa-historia-section{
+    padding-bottom: 0;
+  }
+
+  .nossa-historia-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 70rem;
+    margin-left: 13rem;
+    padding-top: 50px;
+  }
+
+  .texto-nossa-historia p {
+    font-size: 2.3rem;
+    text-align: left;
+    width: 30rem;
+  }
+
+  .botao-historia-wrapper{
+    margin-top: -23rem;
+    margin-left: 2.9rem;
+  }
+
+  .texto-presentes p {
+    font-size: 2.1rem;
+    margin-left: -8rem;
+  }
+
+  .texto-presentes h1 {
+    font-size: 9rem;
+    width: 40rem;
+    margin-left: -8rem;
+  }
+
+  .botao-presentes{
+    margin-left: -8rem;
+  }
+
+  .presentes-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .texto-save-the-date h1 {
+    font-size: 14rem;
+  }
+
+  .texto-save-the-date h2 {
+    font-size: 3rem;
+  }
+
+  .img-nossa-historia {
+    max-width: 700px;
+    margin-bottom: 20rem;
+  }
+
+  .img-presentes {
+    max-width: 600px;
+    left: 25rem;
+    position: absolute;
+  }
+
+  .video-save-the-date video {
+    max-width: 380px;
+  }
+
+  .botao-historia-wrapper button,
+  .botao-presentes {
+    font-size: 2rem;
+    max-width: 500px;
+  }
+
+  .countdown span {
+    font-size: 3rem;
+    min-width: 110px;
+    min-height: 110px;
+  }
+
+  .folha-esquerda,
+  .folha-direita {
+    width: 450px;
+  }
+}
