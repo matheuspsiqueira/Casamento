@@ -1,0 +1,203 @@
+    .etapas {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      margin-top: 150px;
+    }
+
+    .etapas div {
+      border: 2px solid #a3471b;
+      padding: 10px 20px;
+      margin: 0 5px;
+      cursor: pointer;
+      color: #a3471b;
+    }
+
+    .etapas .ativa {
+      background-color: #a3471b;
+      color: white;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    thead {
+      text-align: left;
+      border-bottom: 2px solid #3b1e0e;
+    }
+
+    th, td {
+      padding: 15px 10px;
+      vertical-align: top;
+    }
+
+    .item {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .item img {
+      width: 80px;
+      height: auto;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+
+    .item-desc {
+      display: flex;
+      align-items: center;
+    }
+
+    .quantidade,
+    .valor {
+      text-align: center;
+    }
+
+    .counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .counter button {
+      padding: 4px 10px;
+      background-color: #a3461b65;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 0 5px;
+      border-radius: 100%;
+      transition: 0.5s ease;
+    }
+
+    .counter button:hover{
+      background-color: #a3471b;
+    }
+
+    .counter span {
+      min-width: 20px;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    a{
+      text-decoration: none;
+      color: #7f604e;
+      transition: 0.5s ease;
+    }
+
+    a:hover{
+      color: #a3471b;
+    }
+
+    .botao {
+      background-color: #a3471b;
+      color: white;
+      border: 2px solid #a3471b;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 15px 0;
+    }
+
+    .botao-outline {
+      border: 2px solid #a3471b;
+      color: #a3471b;
+      background: transparent;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .rodape {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .total {
+      text-align: right;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-right: 35px;
+    }
+
+
+    /* Ajuste para telas menores */
+@media (max-width: 768px) {
+
+  .etapas {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .etapas div {
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: center;
+    width: 60%;
+  }
+
+  .item-desc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-desc img {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 120px;
+  }
+
+  .remove{
+    text-align: center;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  .quantidade, .valor {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .counter {
+    justify-content: flex-start;
+  }
+
+  .rodape {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .botao, .botao-outline {
+    width: 100%;
+  }
+}
+
+/* Ajuste para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  th, td {
+    padding: 10px 5px;
+  }
+
+  .etapas div {
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: center;
+    width: 60%;
+  }
+
+  .item-desc div {
+    font-size: 14px;
+  }
+}
